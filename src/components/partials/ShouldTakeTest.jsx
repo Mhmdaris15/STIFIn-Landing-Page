@@ -59,7 +59,7 @@ const ShouldTakeTest = () => {
         {users.map((user, index) => (
           <div
             key={index}
-            className="flex items-center justify-start lg:w-1/4 sm:w-full h-16 mb-4 bg-[#FFB218] rounded-md">
+            className="flex items-center justify-start lg:w-1/4 sm:w-full h-16 mb-4 px-4 bg-[#FFB218] rounded-md">
             <img
               src={images[index]}
               alt="user"
