@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import ShouldTakeTest from "./components/partials/ShouldTakeTest";
 import Results from "./components/partials/Results";
 import Advantages from "./components/partials/Advantages";
+import PriceList from "./components/partials/PriceList";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <ShouldTakeTest />
       <Results />
       <Advantages />
+      <PriceList />
     </div>
   );
 }

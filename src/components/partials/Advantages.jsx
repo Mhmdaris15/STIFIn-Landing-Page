@@ -8,26 +8,66 @@ import image5 from "../../assets/images/advantages/mortarboard.gif";
 import image6 from "../../assets/images/advantages/shield.gif";
 
 const Advantages = () => {
-  const images = [image1, image2, image3, image4, image5, image6];
-
+  const advantages = [
+    {
+      title: "Simple",
+      description:
+        "Dari Miliaran Manusia, STIFIn di kelompokkan hanya dalam 5 Mesin Kecerdasasn dan 9 Personaliti Genetik. Kita hanya perlu mengingat satu diantaranya dan menjadikannya kekuatan utama fokus satu hebat.",
+      image: image1,
+    },
+    {
+      title: "Simple",
+      description:
+        "Dari Miliaran Manusia, STIFIn di kelompokkan hanya dalam 5 Mesin Kecerdasasn dan 9 Personaliti Genetik. Kita hanya perlu mengingat satu diantaranya dan menjadikannya kekuatan utama fokus satu hebat.",
+      image: image2,
+    },
+    {
+      title: "Simple",
+      description:
+        "Dari Miliaran Manusia, STIFIn di kelompokkan hanya dalam 5 Mesin Kecerdasasn dan 9 Personaliti Genetik. Kita hanya perlu mengingat satu diantaranya dan menjadikannya kekuatan utama fokus satu hebat.",
+      image: image3,
+    },
+    {
+      title: "Simple",
+      description:
+        "Dari Miliaran Manusia, STIFIn di kelompokkan hanya dalam 5 Mesin Kecerdasasn dan 9 Personaliti Genetik. Kita hanya perlu mengingat satu diantaranya dan menjadikannya kekuatan utama fokus satu hebat.",
+      image: image4,
+    },
+    {
+      title: "Simple",
+      description:
+        "Dari Miliaran Manusia, STIFIn di kelompokkan hanya dalam 5 Mesin Kecerdasasn dan 9 Personaliti Genetik. Kita hanya perlu mengingat satu diantaranya dan menjadikannya kekuatan utama fokus satu hebat.",
+      image: image5,
+    },
+    {
+      title: "Simple",
+      description:
+        "Dari Miliaran Manusia, STIFIn di kelompokkan hanya dalam 5 Mesin Kecerdasasn dan 9 Personaliti Genetik. Kita hanya perlu mengingat satu diantaranya dan menjadikannya kekuatan utama fokus satu hebat.",
+      image: image6,
+    },
+  ];
+  console.log(advantages);
   return (
-    <div className="my-5">
-      <h1 className="font-extrabold text-4xl">Advantages</h1>
-      {images.map((image, index) => {
-        <div className="max-w-sm">
-          <Card
-            horizontal={true}
-            imgSrc={image}>
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
-            </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-          </Card>
-        </div>;
-      })}
+    <div className="my-5 h-screen">
+      <h1 className="font-extrabold text-4xl my-5">Advantages</h1>
+      <div className="flex flex-wrap justify-center gap-5">
+        {advantages.map((advantage, index) => (
+          <div
+            className="max-w-sm flex items-start gap-x-4"
+            key={index}>
+            <img
+              src={advantage.image}
+              alt={advantage.title}
+              width={20}
+              className="w-1/5"
+            />
+            <div className="flex flex-col justify-start items-start">
+              <h3 className="font-bold text-2xl">{advantage.title}</h3>
+              <p className="text-start">{advantage.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -75,14 +75,15 @@ const Results = () => {
         id="results">
         Results of STIFin Test
       </h1>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center items-center gap-5">
         {results.map((result, index) => (
           <div
             className="max-w-sm"
             key={index}>
             <Card
               imgAlt="Card image"
-              imgSrc={result.image}>
+              imgSrc={result.image}
+              style={{ width: "15rem" }}>
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {result.title}
               </h5>
