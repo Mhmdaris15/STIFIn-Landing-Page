@@ -7,6 +7,8 @@ import ShouldTakeTest from "./components/partials/ShouldTakeTest";
 import Results from "./components/partials/Results";
 import Advantages from "./components/partials/Advantages";
 import PriceList from "./components/partials/PriceList";
+import Testimoni from "./components/partials/Testimoni";
+import Disadvantages from "./components/partials/Disadvantages";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +20,8 @@ function App() {
       <Results />
       <Advantages />
       <PriceList />
+      <Testimoni />
+      <Disadvantages />
     </div>
   );
 }

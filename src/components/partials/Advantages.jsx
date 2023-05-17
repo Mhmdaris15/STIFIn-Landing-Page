@@ -48,7 +48,7 @@ const Advantages = () => {
   ];
   console.log(advantages);
   return (
-    <div className="my-5 h-screen">
+    <div className="my-5">
       <h1 className="font-extrabold text-4xl my-5">Advantages</h1>
       <div className="flex flex-wrap justify-center gap-5">
         {advantages.map((advantage, index) => (
