@@ -69,9 +69,9 @@ const Results = () => {
   ];
 
   return (
-    <>
+    <div className="bg-inherit text-white">
       <h1
-        className="font-extrabold text-4xl my-5"
+        className="font-extrabold text-center text-4xl my-5"
         id="results">
         Results of STIFin Test
       </h1>
@@ -94,7 +94,7 @@ const Results = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

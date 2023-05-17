@@ -25,18 +25,18 @@ const PriceList = () => {
     );
 
   return (
-    <div>
-      <h1 className="text-4xl font-extrabold">Price List</h1>
-      {/* <div className="w-40 h-screen bg-gray-500">
-        <h2 className="text-3xl">Digital Design Basic</h2>
-      </div> */}
-      <section className="bg-white dark:bg-gray-900">
+    <div className="bg-inherit">
+      <h1 className="text-4xl text-centertext-gray-50 font-extrabold">
+        Price List
+      </h1>
+
+      <section className="">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              Designed for business teams like yours
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-100 dark:text-white">
+              Pilihan Paket Terbaik Untuk Anda
             </h2>
-            <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            <p className="mb-5 font-light text-gray-200 sm:text-xl ">
               Here at Flowbite we focus on markets where technology, innovation,
               and capital can unlock long-term value and drive economic growth.
             </p>

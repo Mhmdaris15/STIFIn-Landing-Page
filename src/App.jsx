@@ -9,12 +9,13 @@ import Advantages from "./components/partials/Advantages";
 import PriceList from "./components/partials/PriceList";
 import Testimoni from "./components/partials/Testimoni";
 import Disadvantages from "./components/partials/Disadvantages";
+import FAQ from "./components/partials/FAQ";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App h-full w-screen absolute left-0 top-0 bg-red-600">
+    <div className="App h-full w-screen absolute left-0 top-0 bg-[#0b080f]">
       <Home />
       <ShouldTakeTest />
       <Results />
@@ -22,6 +23,7 @@ function App() {
       <PriceList />
       <Testimoni />
       <Disadvantages />
+      <FAQ />
     </div>
   );
 }

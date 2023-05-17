@@ -47,9 +47,9 @@ const ShouldTakeTest = () => {
   // List directory
 
   return (
-    <>
+    <div className="bg-inherit text-gray-50">
       <h1
-        className="font-extrabold text-4xl my-5"
+        className="font-extrabold text-center text-4xl my-5"
         id="whoshouldtakethistest">
         Who should Take this Test?
       </h1>
@@ -69,7 +69,7 @@ const ShouldTakeTest = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
