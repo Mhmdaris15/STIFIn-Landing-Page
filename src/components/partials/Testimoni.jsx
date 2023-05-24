@@ -51,8 +51,10 @@ const Testimoni = () => {
   };
 
   return (
-    <>
-      <h1 className="font-extrabold text-4xl py-5">Testimoni</h1>
+    <div className="bg-inherit">
+      <h1 className="font-extrabold text-center text-gray-50 text-4xl py-5">
+        Testimoni
+      </h1>
       <div className="grid lg:grid-cols-2 lg:grid-rows-3 lg:w-1/2 lg:grid-flow-col mx-auto lg:gap-4 gap-y-2 text-left text-white">
         {testimonials.map((testimonial, index) => (
           <div
@@ -84,7 +86,7 @@ const Testimoni = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

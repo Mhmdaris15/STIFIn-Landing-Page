@@ -49,11 +49,11 @@ const ShouldTakeTest = () => {
   return (
     <div className="bg-inherit text-gray-50">
       <h1
-        className="font-extrabold text-center text-4xl my-5"
+        className="font-extrabold text-center text-4xl mb-5"
         id="whoshouldtakethistest">
         Who should Take this Test?
       </h1>
-      <div className="flex flex-wrap justify-evenly gap-x-2 my-3">
+      <div className="flex flex-wrap justify-evenly gap-x-2 mt-3">
         {/* card */}
         {/* looping with for loop then create a card */}
         {users.map((user, index) => (

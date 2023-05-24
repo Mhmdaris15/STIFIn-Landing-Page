@@ -16,11 +16,11 @@ const Disadvantages = () => {
     "Tidak Mendapatkan Karir yang Tepat",
   ];
   return (
-    <div className="my-8">
-      <h1 className="font-extrabold text-5xl">
+    <div className="bg-inherit py-5">
+      <h1 className="font-extrabold text-gray-50 py-5 text-center text-5xl">
         Kerugian jika kamu tidak mengikuti Test STIFIn
       </h1>
-      <div className="flex flex-wrap justify-evenly my-5 md:gap-1">
+      <div className="flex flex-wrap justify-evenly md:gap-1">
         {listDisadvantages.map((item, index) => (
           <div
             key={index}

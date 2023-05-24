@@ -26,9 +26,11 @@ const FAQ = () => {
   ];
 
   return (
-    <div>
-      <h1 className="text-5xl font-extrabold">Hal Yang Sering Ditanyakan</h1>
-      <h2 className="text-2xl font-bold text-gray-600">FAQ</h2>
+    <div className="bg-inherit">
+      <h1 className="text-5xl text-gray-50 text-center mb-3 font-extrabold">
+        Hal Yang Sering Ditanyakan
+      </h1>
+      <h2 className="text-2xl text-center mb-5 font-bold text-gray-600">FAQ</h2>
       <div className="lg:w-3/4 lg:mx-auto mx-10">
         <Accordion alwaysOpen={true}>
           {questionAnswers.map((qa, index) => (

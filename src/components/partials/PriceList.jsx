@@ -26,12 +26,12 @@ const PriceList = () => {
 
   return (
     <div className="bg-inherit">
-      <h1 className="text-4xl text-centertext-gray-50 font-extrabold">
+      <h1 className="text-4xl text-center text-gray-50 font-extrabold">
         Price List
       </h1>
 
       <section className="">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="py-8 px-4 mx-auto max-w-screen-2xl lg:pb-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-100 dark:text-white">
               Pilihan Paket Terbaik Untuk Anda
@@ -41,11 +41,11 @@ const PriceList = () => {
               and capital can unlock long-term value and drive economic growth.
             </p>
           </div>
-          <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+          <div className="space-y-8 w-full lg:grid lg:grid-cols-3 sm:gap-6 lg:gap-10 lg:space-y-0">
             {priceLists.map((priceList, index) => (
               <div
                 key={index}
-                className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                className="flex flex-col p-6 mx-auto max-w-lg w-full text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                 <h3 className="mb-4 text-2xl font-semibold">
                   {priceList.category}
                 </h3>

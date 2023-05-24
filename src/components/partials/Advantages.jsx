@@ -47,8 +47,8 @@ const Advantages = () => {
     },
   ];
   return (
-    <div className="my-5 bg-inherit text-gray-50">
-      <h1 className="font-extrabold text-center text-4xl my-5">Advantages</h1>
+    <div className="bg-inherit text-gray-50 py-5">
+      <h1 className="font-extrabold text-center text-4xl">Advantages</h1>
       <div className="flex flex-wrap justify-center gap-5">
         {advantages.map((advantage, index) => (
           <div
@@ -57,8 +57,8 @@ const Advantages = () => {
             <img
               src={advantage.image}
               alt={advantage.title}
-              width={20}
-              className="w-1/5"
+              width={100}
+              className="bg-gray-50 p-2 rounded-full"
             />
             <div className="flex flex-col justify-start items-start">
               <h3 className="font-bold text-2xl">{advantage.title}</h3>
