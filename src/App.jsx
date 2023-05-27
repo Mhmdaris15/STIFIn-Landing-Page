@@ -10,6 +10,7 @@ import PriceList from "./components/partials/PriceList";
 import Testimoni from "./components/partials/Testimoni";
 import Disadvantages from "./components/partials/Disadvantages";
 import FAQ from "./components/partials/FAQ";
+import Footer from "./components/partials/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,6 +25,7 @@ function App() {
       <Testimoni />
       <Disadvantages />
       <FAQ />
+      <Footer />
     </div>
   );
 }
