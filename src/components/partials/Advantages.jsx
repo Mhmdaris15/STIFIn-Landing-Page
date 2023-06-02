@@ -6,6 +6,7 @@ import image3 from "../../assets/images/advantages/connection.gif";
 import image4 from "../../assets/images/advantages/meteor-rain.gif";
 import image5 from "../../assets/images/advantages/mortarboard.gif";
 import image6 from "../../assets/images/advantages/shield.gif";
+import "../../App.css";
 
 const Advantages = () => {
   const advantages = [
@@ -49,10 +50,10 @@ const Advantages = () => {
   return (
     <div className="bg-inherit text-gray-50 py-5">
       <h1 className="font-extrabold text-center text-4xl">Advantages</h1>
-      <div className="flex flex-wrap justify-center gap-5">
+      <div className="grid grid-cols-3 max-w-7xl mx-auto gap-10">
         {advantages.map((advantage, index) => (
           <div
-            className="max-w-sm flex items-start gap-x-4"
+            className="flex items-start gap-x-4"
             key={index}>
             <img
               src={advantage.image}
