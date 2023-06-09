@@ -86,11 +86,11 @@ const Results = () => {
   return (
     <div className="bg-inherit text-white">
       <h1
-        className="font-extrabold text-center text-4xl mb-5"
+        className="font-extrabold text-center text-4xl pt-5 mb-5 px-2"
         id="results">
         Results of STIFin Test
       </h1>
-      <div className="grid grid-cols-3 gap-5 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-3 grid-cols-2 gap-5 max-w-6xl mx-auto">
         {results.map((result, index) => (
           // <div
           //   className="max-w-sm"

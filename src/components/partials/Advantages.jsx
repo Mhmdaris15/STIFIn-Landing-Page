@@ -51,7 +51,7 @@ const Advantages = () => {
     <div className="bg-inherit text-gray-50 py-5">
       <h1 className="font-extrabold text-center text-4xl">Advantages</h1>
       <div className="grid grid-cols-3 max-w-7xl mx-auto gap-10">
-        {advantages.map((advantage, index) => (
+        {/* {advantages.map((advantage, index) => (
           <div
             className="flex items-start gap-x-4"
             key={index}>
@@ -66,7 +66,23 @@ const Advantages = () => {
               <p className="text-start">{advantage.description}</p>
             </div>
           </div>
-        ))}
+        ))} */}
+        <div className="group">
+          <div className="p-5 w-fit h-fit bg-gray-800 text-gray-50 shadow-md">
+            <img
+              src={image1}
+              alt="Image Card"
+            />
+            <h2 className="text-center">Feature</h2>
+          </div>
+          <div className="bg-gray-50 text-gray-900 h-0 invisible transition-all duration-300 group-hover:h-fit group-hover:visible">
+            <p className="text-xs p-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vel
+              voluptas asperiores temporibus architecto enim delectus totam ab
+              culpa saepe.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

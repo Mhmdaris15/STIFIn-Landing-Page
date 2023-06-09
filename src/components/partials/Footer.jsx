@@ -6,8 +6,8 @@ import { IoMdCall } from "react-icons/io";
 const Footer = () => {
   return (
     <div className="bg-inherit w-full h-fit py-16 flex flex-col gap-y-10">
-      <div className="lg:max-w-7xl text-gray-50 mx-auto grid grid-cols-3 items-end rounded-xl h-1/2">
-        <div className="col-span-1 place-content-start flex flex-col justify-center gap-y-5">
+      <div className="lg:max-w-7xl w-full text-gray-50 mx-auto grid md:grid-cols-3 place-items-center items-end rounded-xl h-1/2">
+        <div className="col-span-2 md:col-span-1 place-content-start flex flex-col items-center md:items-start text-center md:text-left justify-center gap-y-5">
           <div className="flex items-center gap-x-5">
             <RiWindyFill
               size={100}
@@ -15,11 +15,13 @@ const Footer = () => {
             />
             <p className="inline-block">Just Produce</p>
           </div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sit
-          nostrum rerum beatae maiores doloremque voluptates, sint aperiam!
+          <span className="px-16 md:px-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sit
+            nostrum rerum beatae maiores doloremque voluptates, sint aperiam!
+          </span>
         </div>
-        <div className="col-span-2 place-content-end flex gap-x-10 items-center">
-          <div className="flex gap-x-6 p-10 outline outline-gray-50 rounded-lg w-fit cursor-pointer transition-all duration-500 hover:bg-gray-100 hover:text-gray-950 hover:outline-gray-600">
+        <div className="col-span-2 place-content-end flex flex-col md:flex-row gap-x-10 gap-y-5 items-center">
+          <div className="flex gap-x-24 p-10 outline outline-gray-50 rounded-lg md:w-fit w-5/6 cursor-pointer transition-all duration-500 hover:bg-gray-100 hover:text-gray-950 hover:outline-gray-600">
             <MdOutlineMail
               size={50}
               className="inline-block"
@@ -29,7 +31,7 @@ const Footer = () => {
               <p>muhammadaris1945@gmail.com</p>
             </div>
           </div>
-          <div className="flex gap-x-6 p-10 outline outline-gray-50 rounded-lg w-fit cursor-pointer transition-all duration-500 hover:bg-gray-100 hover:text-gray-950 hover:outline-gray-600">
+          <div className="flex gap-x-24 p-10 outline outline-gray-50 rounded-lg md:w-fit w-5/6 cursor-pointer transition-all duration-500 hover:bg-gray-100 hover:text-gray-950 hover:outline-gray-600">
             <IoMdCall
               size={50}
               className="inline-block"

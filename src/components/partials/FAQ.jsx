@@ -4,24 +4,50 @@ import { Accordion } from "flowbite-react";
 const FAQ = () => {
   const questionAnswers = [
     {
-      q: "What is Flowbite?",
-      a: "Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.",
+      q: "Apakah tes STIFIn bisa di lakukan secara online?",
+      a: [
+        "Tidak bisa, karena diperlukan untuk melakukan scan pada kesepuluh sidik jari Anda (genetik)",
+      ],
     },
     {
-      q: "Is there a Figma file available?",
-      a: "Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.",
+      q: "Apa yang perlu di siapkan saat mau tes STIFIn?",
+      a: [
+        "Tidak perlu banyak persiapan yang di butuhkan seperti pada tes lainnya. Melainkan hanya membutuhkan scan kesepuluh sidik jari untuk di ambil datanya.",
+      ],
     },
     {
-      q: "What is React JS?",
-      a: "React JS is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.",
+      q: "Berapa lama proses tes STIFIn?",
+      a: [
+        "1.Proses pemindaian sidik jari sekitar 2-3 menit",
+        "2.Setelah itu, butuh sekitar 5-10 menit untuk memproses sidik jari yang di kirim ke server pusat",
+        "3.Selanjutnya penjelasan sekitar 45-60 menit",
+      ],
     },
     {
-      q: "What is best feature of React JS",
-      a: "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
+      q: "Berapa tingkat akurasi Tes STIFIn?",
+      a: [
+        "Akurasi yang di miliki STIFIn memiliki tingkat Validitas (Paper & Pencil) dan Reliabilitas (Finggerprint) yang sangat tinggi yaitu 95% saat dilakukan uji coba tesnya.",
+      ],
     },
     {
-      q: "What is Vue JS?",
-      a: "Vue JS is framework of Javascript",
+      q: "Apakah data sidik jari tersimpan?",
+      a: [
+        "Data sidik jari yang di ambil tidak tersimpan di laptop atau sever STIFIn. Setelah hasil tes STIFIn keluar sidik jari yang di input otomatis terhapus.",
+      ],
+    },
+    {
+      q: "Berapa minimal usia bisa tes STIFIn?",
+      a: [
+        "Rekomendasi usia min. 2,5 tahun sudah bisa melakukan tes STIFIn. Untuk maksimal tak terbatas usia",
+      ],
+    },
+    {
+      q: "Apakah ada sesi tanya jawab setelah tes STIFIn?",
+      a: [
+        "1.Setelah penjelasan hasil tes STIFIn, anda bisa bertanya/konsultasi terkait hasilnya",
+        "2.Anda bisa juga bertanya via Whatsapp promotor yang melakukan tes STIFIn ke Anda",
+        "3.Juga bisa bergabung kedalam komunitas Grup Diskusi Telegram STIFIn Family khusus bagi Anda yang sudah tes STIFIn",
+      ],
     },
   ];
 
@@ -39,7 +65,9 @@ const FAQ = () => {
                 {qa.q}
               </Accordion.Title>
               <Accordion.Content className="bg-[#393342]">
-                <p className="mb-2 text-gray-100 dark:text-gray-400">{qa.a}</p>
+                {qa.a.map((ans, index) => (
+                  <p className="text-gray-50">{ans}</p>
+                ))}
               </Accordion.Content>
             </Accordion.Panel>
           ))}
