@@ -86,35 +86,22 @@ const Results = () => {
   return (
     <div className="bg-inherit text-white">
       <h1
-        className="font-extrabold text-center text-4xl pt-5 mb-5 px-2"
+        className="font-extrabold font-philosopher text-center text-4xl pt-5 md:pt-32 mb-5 px-2"
         id="results">
         Results of STIFin Test
       </h1>
       <div className="grid md:grid-cols-3 grid-cols-2 gap-5 max-w-6xl mx-auto">
         {results.map((result, index) => (
-          // <div
-          //   className="max-w-sm"
-          //   key={index}>
-          //   <Card
-          //     imgAlt="Card image"
-          //     imgSrc={result.image}
-          //     style={{ width: "15rem" }}>
-          //     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          //       {result.title}
-          //     </h5>
-          //     <p className="font-normal text-gray-700 dark:text-gray-400">
-          //       {result.description}
-          //     </p>
-          //   </Card>
-          // </div>
           <div
             key={index}
             className="relative flex flex-col items-center p-5 group hover:shadow-xl transition-all duration-150 rounded-lg hover:scale-105 hover:bg-[#be820a]"
             data-aos="fade-up"
             data-aos-anchor="[data-aos-id-blocks]">
             <result.icon className="text-5xl text-[#FFB218] mb-3 group-hover:text-gray-50" />
-            <h4 className="h4 mb-2">{result.title}</h4>
-            <p className="text-lg text-gray-400 text-center group-hover:text-gray-50">
+            <h4 className="h4 mb-2 font-philosopher font-extrabold text-center">
+              {result.title}
+            </h4>
+            <p className="text-lg font-ubuntu text-gray-400 text-center group-hover:text-gray-50">
               {result.description}
             </p>
           </div>

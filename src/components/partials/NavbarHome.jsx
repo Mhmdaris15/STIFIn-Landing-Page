@@ -1,45 +1,75 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navbar } from "flowbite-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const NavbarHome = () => {
   const [ActiveAbout, SetActiveAbout] = useState(false);
   const [ActiveServices, SetActiveServices] = useState(false);
   const [ActivePricing, SetActivePricing] = useState(false);
   const [ActiveContact, SetActiveContact] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const navHref = [
+    {
+      name: "Advantage",
+      href: "#advantage",
+    },
+    {
+      name: "Services",
+      href: "#services",
+    },
+    {
+      name: "Pricing",
+      href: "#pricing",
+    },
+    {
+      name: "Contact",
+      href: "#contact",
+    },
+  ];
+
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    }
+  });
+
   return (
-    <Navbar
-      className="bg-opacity-60 py-4 flex items-center justify-evenly"
-      fluid={false}
-      rounded={true}>
-      <Navbar.Brand
-        // as={{
-        //   $$typeof: Symbol(React.forward_ref),
-        //   render: LinkWithRef,
-        // }}
-        to="/navbars">
-        <img
-          src="https://flowbite.com/docs/images/logo.svg"
-          className="mr-3 h-6 sm:h-9"
-          alt="Flowbite Logo"
-        />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Flowbite
-        </span>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse>
-        <Navbar.Link
-          href="/navbars"
-          active={true}>
-          Home
-        </Navbar.Link>
-        <Navbar.Link href="#whoshouldtakethistest">About</Navbar.Link>
-        <Navbar.Link href="#results">Services</Navbar.Link>
-        <Navbar.Link href="/navbars">Pricing</Navbar.Link>
-        <Navbar.Link href="/navbars">Contact</Navbar.Link>
-      </Navbar.Collapse>
-    </Navbar>
+    <div className="flex  justify-between items-center w-full md:px-10 px-2 bg-gray-50 text-xl font-bold">
+      <motion.a
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        href="/"
+        className="font-extrabold font-satisfy text-3xl">
+        STIFInTest
+      </motion.a>
+      {isMobile ? (
+        ""
+      ) : (
+        <div className="flex justify-between visible gap-10">
+          {navHref.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              class="group relative inline-block py-2 px-4 border border-transparent text-base font-medium text-gray-900 transition duration-200 ease-in-out">
+              <span class="relative z-10 font-ubuntu text-lg">{item.name}</span>
+              <span class="absolute bottom-0 left-0 w-full h-1 bg-gray-900 transform scale-x-0 origin-left transition-transform duration-200 ease-in-out group-hover:scale-x-100"></span>
+            </a>
+          ))}
+        </div>
+      )}
+      <motion.a
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        href="#contactus">
+        <button className="p-5 bg-gray-950 font-bold text-gray-50 my-3 hover:bg-gray-50 hover:text-gray-950 outline transition-all">
+          Contact Us
+        </button>
+      </motion.a>
+    </div>
   );
 };
 

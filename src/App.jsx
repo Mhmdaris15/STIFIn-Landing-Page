@@ -22,7 +22,7 @@ function App() {
       <Results />
       <Advantages />
       <PriceList />
-      {/* <Testimoni /> */}
+      <Testimoni />
       <Disadvantages />
       <FAQ />
       <Footer />

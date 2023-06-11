@@ -25,15 +25,15 @@ const PriceList = () => {
     );
 
   return (
-    <div className="bg-inherit">
-      <h1 className="text-4xl text-center text-gray-50 font-extrabold">
+    <div className="bg-inherit pt-7">
+      <h1 className="text-4xl font-philosopher text-center text-gray-50 font-extrabold">
         Price List
       </h1>
 
       <section className="">
         <div className="py-8 px-4 mx-auto max-w-screen-2xl lg:pb-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-100 dark:text-white">
+            <h2 className="mb-4 text-4xl font-philosopher tracking-tight font-extrabold text-gray-100 dark:text-white">
               Pilihan Paket Terbaik Untuk Anda
             </h2>
             <p className="mb-5 font-light text-gray-200 sm:text-xl ">
@@ -45,20 +45,18 @@ const PriceList = () => {
             {priceLists.map((priceList, index) => (
               <div
                 key={index}
-                className="flex flex-col p-6 mx-auto max-w-lg w-full text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                <h3 className="mb-4 text-2xl font-semibold">
+                className="flex flex-col p-6 mx-auto font-philosopher max-w-lg w-full text-center rounded-xl shadow shadow-yellow-200 text-gray-50 hover:bg-gradient-to-br hover:from-gray-900 hover:from-30% hover:via-yellow-200 hover:via-100% hover:to-yellow-300 transition-all">
+                <h3 className="mb-4 text-2xl font-semibold font-ubuntu">
                   {priceList.category}
                 </h3>
-                <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <p className="font-light text-gray-200 sm:text-lg font-ubuntu">
                   {priceList.nums}
                 </p>
                 <div className="flex flex-col justify-center items-center my-8">
-                  <span className="mr-2 text-4xl font-extrabold">
+                  <span className="mr-2 text-4xl font-extrabold font-philosopher">
                     {priceList.price}
                   </span>
-                  <span className="text-gray-500 dark:text-gray-400">
-                    Per orang
-                  </span>
+                  <span className="text-gray-200 font-ubuntu">Per orang</span>
                 </div>
                 {/* List */}
                 <ul
@@ -80,14 +78,14 @@ const PriceList = () => {
                           clipRule="evenodd"
                         />
                       </svg>
-                      <span>{feature}</span>
+                      <span className="font-ubuntu">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <a
                   href="#"
-                  className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
-                  Get started
+                  className="text-gray-900 font-ubuntu font-extrabold bg-yellow-300 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
+                  Interest to This Item
                 </a>
               </div>
             ))}

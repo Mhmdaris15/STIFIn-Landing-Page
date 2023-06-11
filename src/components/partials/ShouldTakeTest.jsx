@@ -12,6 +12,7 @@ import image10 from "../../assets/images/users/termination.png";
 import image11 from "../../assets/images/users/work.png";
 import image12 from "../../assets/images/users/growth.png";
 import image13 from "../../assets/images/users/motivation.png";
+import { motion } from "framer-motion";
 
 const ShouldTakeTest = () => {
   const images = [
@@ -47,26 +48,29 @@ const ShouldTakeTest = () => {
   // List directory
 
   return (
-    <div className="bg-inherit text-gray-50 pt-24 md:pt-0">
+    <div className="bg-inherit text-gray-50 pt-24 md:pt-10">
       <h1
-        className="font-extrabold text-center text-4xl mb-5"
+        className="font-extrabold text-center text-4xl mb-5 md:mb-0 font-philosopher"
         id="whoshouldtakethistest">
         Who should Take this Test?
       </h1>
-      <div className="flex flex-wrap justify-evenly gap-x-2 mt-3">
+      <div className="grid md:grid-rows-5 md:grid-flow-col justify-items-stretch gap-x-5 mx-5">
         {/* card */}
         {/* looping with for loop then create a card */}
         {users.map((user, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, x: index < 7 ? -100 : 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4 }}
             key={index}
-            className="flex items-center justify-start lg:w-1/4 w-full md:max-w-xl h-16 mb-4 px-4 bg-[#FFB218] rounded-md">
+            className="flex items-center justify-start md:max-w-xl h-16 mb-4 px-4 bg-[#FFB218] rounded-md">
             <img
               src={images[index]}
               alt="user"
               className="object-cover w-12 h-12 rounded-full"
             />
-            <h3 className="font-bold">{user}</h3>
-          </div>
+            <h3 className="font-bold font-ubuntu">{user}</h3>
+          </motion.div>
         ))}
       </div>
     </div>

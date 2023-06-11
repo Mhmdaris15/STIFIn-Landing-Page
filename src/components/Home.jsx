@@ -1,6 +1,7 @@
 import React from "react";
 import NavbarHome from "./partials/NavbarHome";
 import StuckAtHome from "../assets/images/Stuck at Home - Brainstorming.png";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -47,11 +48,15 @@ const Home = () => {
       </div> */}
 
       <section class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-          <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+        <motion.div
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          class="px-4 mx-auto flex flex-col justify-center gap-y-10 max-w-screen-xl text-center min-h-screen">
+          <h1 class="text-4xl font-philosopher font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             Apa itu STIFIn?
           </h1>
-          <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+          <p class="font-ubuntu text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
             STIFIn adalah sebuah konsep untuk mengidentifikasi mesin kecerdasan
             manusia berdasarkan sistem operasi otak yang dominan, yang dapat
             diidentifikasi dengan memindai sidik jari. Terdiri dari teori-teori
@@ -84,7 +89,7 @@ const Home = () => {
               Learn more
             </a>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );
