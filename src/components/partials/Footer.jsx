@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </a>
           <a
-            href="tel:+6285814045755"
+            href="tel:+6281318310354"
             className="grid grid-cols-4 w-11/12 mx-auto outline px-10 py-16 outline-gray-50 rounded-lg cursor-pointer transition-all duration-500 hover:bg-gray-100 hover:text-gray-950 hover:outline-gray-600">
             <IoMdCall
               size={50}
@@ -45,13 +45,15 @@ const Footer = () => {
             />
             <div className="col-span-3">
               <p>Give us a call</p>
-              <p>+62 858-1404-5755</p>
+              <p>+62 813-1831-0354</p>
             </div>
           </a>
         </div>
       </div>
       <a
-        href={"https://wa.link/4r7dza"}
+        href={
+          "https://wa.me/6281318310354?text=Permisi%20Mas,%20saya%20ingin%20bertanya-tanya%20mengenai%20Test%20STIFIn%20^^"
+        }
         target="_blank"
         className="grid grid-cols-3 mx-5 place-items-center text-center max-w-xl text-gray-50 bg-green-500 hover:bg-green-700 hover:scale-105 transition-all md:mx-auto rounded-xl px-5 py-3">
         <MdWhatsapp

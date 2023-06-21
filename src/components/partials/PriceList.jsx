@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const PriceList = () => {
   const priceLists = [
@@ -82,11 +83,13 @@ const PriceList = () => {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href="#"
+                <Link
+                  to="contactus"
+                  smooth={true}
+                  duration={750}
                   className="text-gray-900 font-ubuntu font-extrabold bg-yellow-300 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
                   Interest to This Item
-                </a>
+                </Link>
               </div>
             ))}
           </div>

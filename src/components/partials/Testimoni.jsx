@@ -1,8 +1,43 @@
 import { Container } from "postcss";
-import React from "react";
+import React, { useState, Fragment } from "react";
 import star from "../../assets/images/users/star.png";
+import { Dialog, Transition } from "@headlessui/react";
+import Certificate from "../../assets/images/sertifikat-promotor.jpg";
+
+import Image1 from "../../assets/images/IMG-20230619-WA0031.jpg";
+import Image2 from "../../assets/images/IMG-20230619-WA0032.jpg";
+import Image3 from "../../assets/images/IMG-20230619-WA0033.jpg";
+import Image4 from "../../assets/images/IMG-20230619-WA0034.jpg";
+import Image5 from "../../assets/images/IMG-20230619-WA0035.jpg";
+import Image6 from "../../assets/images/IMG-20230619-WA0036.jpg";
+import Image7 from "../../assets/images/IMG-20230619-WA0037.jpg";
+import Image8 from "../../assets/images/IMG-20230619-WA0038.jpg";
+import Image9 from "../../assets/images/IMG-20230619-WA0039.jpg";
 
 const Testimoni = () => {
+  let [isOpen, setIsOpen] = useState(true);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  const Images = [
+    Certificate,
+    Image1,
+    Image2,
+    Image3,
+    Image4,
+    Image5,
+    Image6,
+    Image7,
+    Image8,
+    Image9,
+  ];
+
   const testimonials = [
     {
       star: 5,
@@ -85,6 +120,105 @@ const Testimoni = () => {
             <span className="text-gray-300">{testimonial.job}</span>
           </div>
         ))}
+      </div>
+      <div>
+        <h1 className="font-extrabold text-4xl text-gray-50 text-center font-philosopher py-10 pt-32">
+          Galeri Kami
+        </h1>
+        <h2 className="font-extrabold text-3xl text-gray-50 text-center font-philosopher py-7">
+          Jangan Ragu, Promoter kami sudah tersertifikasi!
+        </h2>
+        {/* <div className="flex items-center justify-center">
+          <button
+            type="button"
+            onClick={openModal}
+            className="rounded-md p-5 bg-gradient-to-r from-yellow-600 to-red-600 bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            <img
+              src={Certificate}
+              alt="Sertifikat Promotor"
+              className="rounded-md"
+              width={200}
+            />
+            <h3 className="py-2">Klik Disini!</h3>
+          </button>
+        </div> */}
+        <div className="grid md:grid-cols-4 justify-items-center items-center md:max-w-6xl w-full mx-auto gap-5">
+          {Images.map((image, index) => (
+            <div
+              key={index}
+              className={
+                `p-2 border-2 border-gray-50 ` +
+                (index == Images.length - 1
+                  ? "md:w-[30em] md:translate-x-32"
+                  : "md:w-64")
+              }>
+              <img
+                src={image}
+                className={
+                  `rounded-md w-full ` +
+                  (index == Images.length - 1 ? "col-span-3" : "")
+                }
+                alt={`Image ${index}`}
+              />
+            </div>
+          ))}
+        </div>
+        {/* <Transition
+          appear
+          show={isOpen}
+          as={Fragment}>
+          <Dialog
+            as="div"
+            className="relative z-10"
+            onClose={closeModal}>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0">
+              <div className="fixed inset-0 bg-black bg-opacity-25" />
+            </Transition.Child>
+
+            <div className="fixed inset-0 overflow-y-auto">
+              <div className="flex min-h-full items-center justify-center p-4 text-center">
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95">
+                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                    <Dialog.Title
+                      as="h3"
+                      className="text-lg font-medium leading-6 text-gray-900">
+                      Payment successful
+                    </Dialog.Title>
+                    <div className="mt-2">
+                      <p className="text-sm text-gray-500">
+                        Your payment has been successfully submitted. We’ve sent
+                        you an email with all of the details of your order.
+                      </p>
+                    </div>
+
+                    <div className="mt-4">
+                      <button
+                        type="button"
+                        className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                        onClick={closeModal}>
+                        Got it, thanks!
+                      </button>
+                    </div>
+                  </Dialog.Panel>
+                </Transition.Child>
+              </div>
+            </div>
+          </Dialog>
+        </Transition> */}
       </div>
     </div>
   );

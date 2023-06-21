@@ -48,9 +48,9 @@ const ShouldTakeTest = () => {
   // List directory
 
   return (
-    <div className="bg-inherit text-gray-50 pt-24 md:pt-10">
+    <div className="bg-inherit text-gray-50 pt-16 md:pt-10">
       <h1
-        className="font-extrabold text-center text-4xl mb-5 md:mb-0 font-philosopher"
+        className="font-extrabold text-center text-4xl mb-5 lg:mb-12 md:mb-0 font-philosopher"
         id="whoshouldtakethistest">
         Who should Take this Test?
       </h1>

@@ -59,14 +59,20 @@ const FAQ = () => {
       <h2 className="text-2xl text-center mb-5 font-bold text-gray-600">FAQ</h2>
       <div className="lg:w-3/4 lg:mx-auto mx-10">
         <Accordion alwaysOpen={true}>
-          {questionAnswers.map((qa, index) => (
-            <Accordion.Panel className="bg-[#110e18]">
+          {questionAnswers.map((qa, idx) => (
+            <Accordion.Panel
+              className="bg-[#110e18]"
+              key={idx}>
               <Accordion.Title className="bg-[#110e18] text-gray-50 hover:bg-[#110e18]">
                 {qa.q}
               </Accordion.Title>
               <Accordion.Content className="bg-[#393342]">
-                {qa.a.map((ans, index) => (
-                  <p className="text-gray-50">{ans}</p>
+                {qa.a.map((ans, i) => (
+                  <p
+                    className="text-gray-50"
+                    key={i}>
+                    {ans}
+                  </p>
                 ))}
               </Accordion.Content>
             </Accordion.Panel>
