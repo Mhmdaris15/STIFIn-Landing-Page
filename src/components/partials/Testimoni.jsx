@@ -3,6 +3,7 @@ import React, { useState, Fragment } from "react";
 import star from "../../assets/images/users/star.png";
 import { Dialog, Transition } from "@headlessui/react";
 import Certificate from "../../assets/images/sertifikat-promotor.jpg";
+import { motion } from "framer-motion";
 
 import Image1 from "../../assets/images/IMG-20230619-WA0031.jpg";
 import Image2 from "../../assets/images/IMG-20230619-WA0032.jpg";
@@ -42,37 +43,37 @@ const Testimoni = () => {
     {
       star: 5,
       argument:
-        "Lovro is an exceptional designer who has worked on multiple e-commerce projects with great success. His designs are sleek, and user-friendly, and have won awards. He also prioritizes the user experience and understands business goals. Lovro is communicative, collaborative, and the real deal for taking e-commerce sites to the next level.Anyway, if you're looking for a designer who will take your e-commerce site to the next level, Lovro is the real deal.",
+        "Jika selama ini sidik jari hanya digunakan untuk melengkapi identitas, kepentingan kepolisisan, dan sebagai penanda kehadiran seseorang, maka dengan adanya analisis sidik jari dapat digunakan untuk menbaca potensi terpendam setiap anak. Dengan demikian, setiap anak akan mendapatkan hak sesuai dengan kecenderungan yang mereka miliki. Jangan paksa anak melukis, padahal ia senang menari. Mengetahui potensi anak sejak dini merupakan sebuah keharusan agar anak mendapat perlakuan yang berbeda dan khusus. Dengan melalui analisis sidik jari ini semakin membuka pikiran kita bahwa setiap anak dilahirkan dengan kecerdasan dan potensinya masing-masing.",
       image: "https://picsum.photos/200/300",
-      name: "John Doe",
-      job: "CEO",
+      name: "Prof. Dr. Arief Rahman, M.Pd",
+      job: "Praktisi Pendidikan",
       rows: 2,
     },
     {
       star: 5,
       argument:
-        "Lovro's Amazing attention to detail and well-organized Figma boards make the collaborations really pleasurable. Highly recommended!",
+        "Saya telah membaca laporan riset yang dipimpin Prof. Dr. Mohammed Zin Nordin dan timnya tentang Tes STIFIn. Mereka telah melakukan riset yang baik.",
       image: "https://picsum.photos/200/300",
-      name: "John Doe",
-      job: "CEO",
+      name: "Prof. Dr. Kumaidi, MA.",
+      job: "Univ. Muhammadiyah Surakarta, Ahli Psikometrik.",
       rows: 1,
     },
     {
       star: 5,
       argument:
-        "Lovro has been an exceptional addition to our design team, bringing unparalleled skills and expertise to the table. Not only is he a highly reliable and dependable professional, but he consistently delivers outstanding results, which is truly a rare find in today's fast-paced industry. We couldn't be more thrilled to have Lovro as a part of our team and are excited to witness his continued success.",
+        "Hasil Tes STIFIn ini sangat cocok dengan saya. Penjelasannya sangat ilmiah, detail, dan praktis untuk saya pahami. Jadi menurut saya, tes ini sangat penting dilakukan sedini mungkin agar kita sebagai orang tua tidak salah dalam mengarahkan anak untuk memilih jalur pendidikan dan profesi yang sesuai dengan bahkan dan potensinya. Sehingga anak-anak menemukan cara belajar yang menyenangkan.",
       image: "https://picsum.photos/200/300",
-      name: "John Doe",
-      job: "CEO",
+      name: "Prof. Dr. Kuswandi, S.U., M.Phill., Apt.",
+      job: "Guru Besar UGM. Pakar Genetika, Pemerhati Pendidikan",
       rows: 1,
     },
     {
       star: 5,
       argument:
-        'Lovro is a great guy to work with. I had worked with him as a "team extender", where he helped our team by providing his UI skills when our team was overbooked. He listens carefully and responds professionally. He is well-versed in design knowledge, web/app tech capabilities, and last but not least talking to and handing over his work to developers. He is a great asset!',
+        "Banyak cara untuk memahami diri sendiri & orang lain. Dengan STIFIn kita akan lebih mengerti & memahami diri sendiri dengan orang lain. Kerjasama dalam keluarga dan dunia kerja menjadi lebih baik.",
       image: "https://picsum.photos/200/300",
-      name: "John Doe",
-      job: "CEO",
+      name: "Kris Pujiatni",
+      job: "Psikolog, Dosen Psikologi Fakultas UMS",
       rows: 2,
     },
   ];
@@ -145,6 +146,9 @@ const Testimoni = () => {
         <div className="grid md:grid-cols-4 justify-items-center items-center md:max-w-6xl w-full mx-auto gap-5">
           {Images.map((image, index) => (
             <div
+              // initial={{ opacity: 0, y: 100 }}
+              // animate={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.5 }}
               key={index}
               className={
                 `p-2 border-2 border-gray-50 ` +

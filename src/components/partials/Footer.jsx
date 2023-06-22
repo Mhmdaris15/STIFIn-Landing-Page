@@ -25,20 +25,20 @@ const Footer = () => {
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 col-span-2 gap-5 ">
           <a
-            href="https://mail.google.com/mail/?view=cm&to=muhammadaris1945@gmail.com&su=Pemesanan%20STIFIn%20Test&body=Permisi,%20saya%20%5BNama%20Client%5D%20tertarik%20dengan%20Paket%20%5BNama%20Paket%5D.%20Bisa%20kita%20bicarakan%20lebih%20lanjut%3F"
-            className="grid grid-cols-4 w-11/12 mx-auto outline px-10 py-16 outline-gray-50 rounded-lg cursor-pointer transition-all duration-500 hover:bg-gray-100 hover:text-gray-950 hover:outline-gray-600">
+            href="https://mail.google.com/mail/?view=cm&to=arie.mpra@gmail.com&su=Pemesanan%20STIFIn%20Test&body=Permisi,%20saya%20%5BNama%20Client%5D%20tertarik%20dengan%20Paket%20%5BNama%20Paket%5D.%20Bisa%20kita%20bicarakan%20lebih%20lanjut%3F"
+            className="grid grid-cols-4 mx-auto outline px-10 py-16 outline-gray-50 rounded-lg cursor-pointer transition-all duration-500 hover:bg-gray-100 hover:text-gray-950 hover:outline-gray-600">
             <MdOutlineMail
               size={50}
               className="inline-block"
             />
             <div className="col-span-3">
               <p>Send Us an Email</p>
-              <p>muhammadaris1945@gmail.com</p>
+              <p>arie.mpra@gmail.com</p>
             </div>
           </a>
           <a
             href="tel:+6281318310354"
-            className="grid grid-cols-4 w-11/12 mx-auto outline px-10 py-16 outline-gray-50 rounded-lg cursor-pointer transition-all duration-500 hover:bg-gray-100 hover:text-gray-950 hover:outline-gray-600">
+            className="grid grid-cols-4 mx-auto outline px-10 py-16 outline-gray-50 rounded-lg cursor-pointer transition-all duration-500 hover:bg-gray-100 hover:text-gray-950 hover:outline-gray-600">
             <IoMdCall
               size={50}
               className="inline-block"
