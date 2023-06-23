@@ -15,20 +15,20 @@ const NavbarHome = () => {
 
   const navHref = [
     {
-      name: "Advantage",
-      href: "#advantage",
+      name: "FAQ",
+      href: "faq",
     },
     {
-      name: "Services",
-      href: "#services",
+      name: "Advantages",
+      href: "advantage",
     },
     {
       name: "Pricing",
-      href: "#pricing",
+      href: "pricing",
     },
     {
-      name: "Contact",
-      href: "#contact",
+      name: "Gallery",
+      href: "gallery",
     },
   ];
 
@@ -54,10 +54,13 @@ const NavbarHome = () => {
         transition={{ duration: 1 }}
         className={
           `flex justify-between visible gap-10 ` +
-          (isMobile | state ? "hidden" : "block")
+          (isMobile ? "hidden" : "block")
         }>
         {navHref.map((item, index) => (
-          <a
+          <Link
+            to={item.href}
+            smooth={true}
+            duration={800}
             key={index}
             href={item.href}
             className="group relative inline-block py-2 px-4 border border-transparent text-base font-medium text-gray-900 transition duration-200 ease-in-out">
@@ -65,19 +68,24 @@ const NavbarHome = () => {
               {item.name}
             </span>
             <span className="absolute bottom-0 left-0 w-full h-1 bg-gray-900 transform scale-x-0 origin-left transition-transform duration-200 ease-in-out group-hover:scale-x-100"></span>
-          </a>
+          </Link>
         ))}
       </motion.div>
-      <Link
-        to="contactus"
-        smooth={true}
-        duration={800}
-        className={
-          `p-5 bg-gray-950 font-bold text-gray-50 my-3 hover:bg-gray-50 hover:text-gray-950 outline transition-all ` +
-          (isMobile | state ? "hidden" : "block")
-        }>
-        Contact Us
-      </Link>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}>
+        <Link
+          to="contactus"
+          smooth={true}
+          duration={800}
+          className={
+            `p-5 bg-gray-950 font-bold text-gray-50 my-3 hover:bg-gray-50 hover:text-gray-950 outline transition-all ` +
+            (isMobile ? "hidden" : "block")
+          }>
+          Contact Us
+        </Link>
+      </motion.div>
       <motion.div
         className="md:hidden"
         onClick={() => setState(!state)}

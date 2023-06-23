@@ -122,7 +122,7 @@ const Testimoni = () => {
           </div>
         ))}
       </div>
-      <div>
+      <div id="gallery">
         <h1 className="font-extrabold text-4xl text-gray-50 text-center font-philosopher py-10 pt-32">
           Galeri Kami
         </h1>

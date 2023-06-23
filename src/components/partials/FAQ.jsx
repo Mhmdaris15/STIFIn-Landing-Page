@@ -46,13 +46,15 @@ const FAQ = () => {
       a: [
         "1.Setelah penjelasan hasil tes STIFIn, anda bisa bertanya/konsultasi terkait hasilnya",
         "2.Anda bisa juga bertanya via Whatsapp promotor yang melakukan tes STIFIn ke Anda",
-        "3.Juga bisa bergabung kedalam komunitas Grup Diskusi Telegram STIFIn Family khusus bagi Anda yang sudah tes STIFIn",
+        // "3.Juga bisa bergabung kedalam komunitas Grup Diskusi Telegram STIFIn Family khusus bagi Anda yang sudah tes STIFIn",
       ],
     },
   ];
 
   return (
-    <div className="bg-inherit">
+    <div
+      id="faq"
+      className="bg-inherit">
       <h1 className="text-5xl text-gray-50 text-center mb-3 font-extrabold">
         Hal Yang Sering Ditanyakan
       </h1>

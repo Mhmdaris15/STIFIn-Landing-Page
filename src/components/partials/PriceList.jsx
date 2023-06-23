@@ -21,12 +21,14 @@ const PriceList = () => {
   ];
 
   const features =
-    "Test STIFIn, Sertifikat + Map, Penjelasan / Konsultasi, PIN / GANCI, Buku Hasil Test STIFIn, Ebook Hasil Test STIFIn, Tanya Jawab, Grup Telegram, Tempat Sesuai Permintaan".split(
+    "Test STIFIn, Sertifikat + Map, Penjelasan / Konsultasi, E-Book 9 Personaliti Genetik, Tanya Jawab".split(
       ", "
     );
 
   return (
-    <div className="bg-inherit pt-7">
+    <div
+      id="pricing"
+      className="bg-inherit pt-7">
       <h1 className="text-4xl font-philosopher text-center text-gray-50 font-extrabold">
         Price List
       </h1>
