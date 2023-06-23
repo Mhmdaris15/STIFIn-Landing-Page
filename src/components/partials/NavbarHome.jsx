@@ -79,50 +79,9 @@ const NavbarHome = () => {
           to="contactus"
           smooth={true}
           duration={800}
-          className={
-            `p-5 bg-gray-950 font-bold text-gray-50 my-3 hover:bg-gray-50 hover:text-gray-950 outline transition-all ` +
-            (isMobile ? "hidden" : "block")
-          }>
+          className={`p-5 bg-gray-950 font-bold text-gray-50 my-3 hover:bg-gray-50 hover:text-gray-950 outline transition-all `}>
           Contact Us
         </Link>
-      </motion.div>
-      <motion.div
-        className="md:hidden"
-        onClick={() => setState(!state)}
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}>
-        <button
-          className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
-          onClick={() => setState(!state)}>
-          {state ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              viewBox="0 0 20 20"
-              fill="currentColor">
-              <path
-                fillRule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 8h16M4 16h16"
-              />
-            </svg>
-          )}
-        </button>
       </motion.div>
     </div>
   );

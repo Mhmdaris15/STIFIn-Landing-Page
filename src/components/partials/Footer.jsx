@@ -63,7 +63,7 @@ const Footer = () => {
         <p className="cols-span-2 text-center">Contact Us Right Now!</p>
       </a>
       <a
-        href={"https://www.instagram.com/stifinpusat/"}
+        href={"https://www.instagram.com/ariempra/"}
         target="_blank"
         className="grid grid-cols-3 mx-5 place-items-center text-center max-w-xl text-gray-50 bg-gradient-to-tl from-indigo-900 via-red-600 to-yellow-500 hover:scale-105 transition-all md:mx-auto rounded-xl px-5 py-5">
         <BsInstagram
