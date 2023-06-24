@@ -52,7 +52,7 @@ const ShouldTakeTest = () => {
       <h1
         className="font-extrabold text-center text-4xl mb-5 lg:mb-12 md:mb-0 font-philosopher"
         id="whoshouldtakethistest">
-        Who should Take this Test?
+        Manfaat Tes STIFIn
       </h1>
       <div className="grid md:grid-rows-5 md:grid-flow-col justify-items-stretch gap-x-5 mx-5">
         {/* card */}

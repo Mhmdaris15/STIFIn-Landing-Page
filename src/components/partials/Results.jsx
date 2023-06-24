@@ -88,7 +88,7 @@ const Results = () => {
       <h1
         className="font-extrabold font-philosopher text-center text-4xl pt-5 md:pt-32 mb-5 px-2"
         id="results">
-        Results of STIFin Test
+        Hasil Tes STIFIn
       </h1>
       <div className="grid md:grid-cols-3 grid-cols-2 gap-5 max-w-6xl mx-auto">
         {results.map((result, index) => (

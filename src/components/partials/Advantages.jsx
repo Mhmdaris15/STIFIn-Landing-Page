@@ -51,7 +51,9 @@ const Advantages = () => {
     <div
       id="advantage"
       className="bg-inherit text-gray-50 py-5">
-      <h1 className="font-extrabold text-center text-4xl">Advantages</h1>
+      <h1 className="font-extrabold text-center text-4xl">
+        Keunggulan Tes STIFIn
+      </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 mx-5 pt-7 lg:gap-5 max-w-7xl md:mx-auto">
         {advantages.map((advantage, index) => (
           <div
