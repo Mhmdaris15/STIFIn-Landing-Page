@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image1 from "../../assets/images/users/business-2.png";
 import image2 from "../../assets/images/users/business.png";
 import image3 from "../../assets/images/users/career.png";
@@ -48,7 +48,7 @@ const ShouldTakeTest = () => {
   // List directory
 
   return (
-    <div className="bg-inherit text-gray-50 pt-16 md:pt-10">
+    <div className="bg-inherit block text-gray-50 pt-16 md:pt-24">
       <h1
         className="font-extrabold text-center text-4xl mb-5 lg:mb-12 md:mb-0 font-philosopher"
         id="whoshouldtakethistest">
