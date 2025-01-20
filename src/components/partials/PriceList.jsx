@@ -21,7 +21,7 @@ const PriceList = () => {
   ];
 
   const features =
-    "Test STIFIn, Sertifikat + Map, Penjelasan / Konsultasi, E-Book 9 Personaliti Genetik, Tanya Jawab".split(
+    "Test STIFIn, Sertifikat, Penjelasan / Konsultasi, E-Book 9 Personaliti Genetik, Sesi Tanya Jawab".split(
       ", "
     );
 
@@ -29,37 +29,37 @@ const PriceList = () => {
     <div
       id="pricing"
       className="bg-inherit pt-7">
-      <h1 className="text-4xl font-philosopher text-center text-gray-50 font-extrabold">
+      <h1 className="text-4xl font-philosopher text-center text-gray-900 font-extrabold">
         Price List
       </h1>
 
       <section className="">
         <div className="py-8 px-4 mx-auto max-w-screen-2xl lg:pb-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 className="mb-4 text-4xl font-philosopher tracking-tight font-extrabold text-gray-100 dark:text-white">
+            <h2 className="mb-4 text-4xl font-philosopher tracking-tight font-extrabold text-gray-900">
               Pilihan Paket Terbaik Untuk Anda
             </h2>
-            <p className="mb-5 font-light text-gray-200 sm:text-xl ">
+            <p className="mb-5 font-light text-gray-900 sm:text-xl ">
               Pilih paket yang sesuai dengan kebutuhan Anda dan dapatkan manfaat
-              dari setiap paket yang kami tawarkan.
+              dari setiap paket yang kami tawarkan. <b className="text-red-600">(Harga bisa dinegosiasikan dengan cicilan 0%)</b>
             </p>
           </div>
           <div className="space-y-8 w-full lg:grid lg:grid-cols-3 sm:gap-6 lg:gap-10 lg:space-y-0">
             {priceLists.map((priceList, index) => (
               <div
                 key={index}
-                className="flex flex-col p-6 mx-auto font-philosopher max-w-lg w-full text-center rounded-xl shadow shadow-yellow-200 text-gray-50 hover:bg-gradient-to-br hover:from-gray-900 hover:from-30% hover:via-yellow-200 hover:via-100% hover:to-yellow-300 transition-all">
+                className="flex flex-col p-6 mx-auto font-philosopher max-w-lg w-full text-center rounded-xl shadow shadow-yellow-200 text-gray-900 hover:bg-gradient-to-br hover:from-gray-300 hover:from-30% hover:via-yellow-200 hover:via-100% hover:to-yellow-300 transition-all">
                 <h3 className="mb-4 text-2xl font-semibold font-ubuntu">
                   {priceList.category}
                 </h3>
-                <p className="font-light text-gray-200 sm:text-lg font-ubuntu">
+                <p className="font-light text-gray-800 sm:text-lg font-ubuntu">
                   {priceList.nums}
                 </p>
                 <div className="flex flex-col justify-center items-center my-8">
                   <span className="mr-2 text-4xl font-extrabold font-philosopher">
                     {priceList.price}
                   </span>
-                  <span className="text-gray-200 font-ubuntu">Per orang</span>
+                  <span className="text-gray-800 font-ubuntu">Per orang</span>
                 </div>
                 {/* List */}
                 <ul

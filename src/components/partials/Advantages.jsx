@@ -8,7 +8,7 @@ import image5 from "../../assets/images/advantages/mortarboard.gif";
 import image6 from "../../assets/images/advantages/shield.gif";
 import "../../App.css";
 
-const Advantages = () => {
+const   Advantages = () => {
   const advantages = [
     {
       title: "Simple",
@@ -28,29 +28,29 @@ const Advantages = () => {
         "STIFIn memiliki keunggulan yang sifatnya Multi Angle Field dimana hasilnya ini dapat di terapkan dalam segala bidang seperti Learning, Teaching, Parenting, Bisnis, Profesi, Suri Rumah, Couple, Health.",
       image: image3,
     },
-    {
-      title: "1x SEUMUR HIDUP",
-      description:
-        "Dari Miliaran Manusia, STIFIn di kelompokkan hanya dalam 5 Mesin Kecerdasasn dan 9 Personaliti Genetik. Kita hanya perlu mengingat satu diantaranya dan menjadikannya kekuatan utama fokus satu hebat.",
-      image: image4,
-    },
-    {
-      title: "DERIVASI AL QUR'AN",
-      description:
-        "Konsep STIFIn dikompilasi dari teori-teori 3 Ahli Psikologi yang riset ilmiahnya sudah diakui dan di ajarkan dikampus. Hasil kompilasi tersebut disesuaikan dengan Al-Qur’an & Hadits. Jika ada teori yang tidak sesuai dengan Al-Qur’an & Hadits maka Konsep STIFInnya di revisi.",
-      image: image5,
-    },
-    {
-      title: "Metode Tes STIFIn",
-      description:
-        "Menggunakan Tes Sidik Jari sehingga hasil tes tidak di pengaruhi oleh faktor kondisi fisik dan psikis seseorang. Sehingga hanya perlu dilakukan 1x seumur hidup, karena hasilnya tetap sama tidak akan berubah.",
-      image: image6,
-    },
+    // {
+    //   title: "1x SEUMUR HIDUP",
+    //   description:
+    //     "Dari Miliaran Manusia, STIFIn di kelompokkan hanya dalam 5 Mesin Kecerdasasn dan 9 Personaliti Genetik. Kita hanya perlu mengingat satu diantaranya dan menjadikannya kekuatan utama fokus satu hebat.",
+    //   image: image4,
+    // },
+    // {
+    //   title: "DERIVASI AL QUR'AN",
+    //   description:
+    //     "Konsep STIFIn dikompilasi dari teori-teori 3 Ahli Psikologi yang riset ilmiahnya sudah diakui dan di ajarkan dikampus. Hasil kompilasi tersebut disesuaikan dengan Al-Qur’an & Hadits. Jika ada teori yang tidak sesuai dengan Al-Qur’an & Hadits maka Konsep STIFInnya di revisi.",
+    //   image: image5,
+    // },
+    // {
+    //   title: "Metode Tes STIFIn",
+    //   description:
+    //     "Menggunakan Tes Sidik Jari sehingga hasil tes tidak di pengaruhi oleh faktor kondisi fisik dan psikis seseorang. Sehingga hanya perlu dilakukan 1x seumur hidup, karena hasilnya tetap sama tidak akan berubah.",
+    //   image: image6,
+    // },
   ];
   return (
     <div
       id="advantage"
-      className="bg-inherit text-gray-50 py-5">
+      className="bg-inherit text-gray-900 py-5 pb-5">
       <h1 className="font-extrabold text-center text-4xl">
         Keunggulan Tes STIFIn
       </h1>

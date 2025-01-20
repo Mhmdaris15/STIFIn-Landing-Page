@@ -88,7 +88,7 @@ const Testimoni = () => {
 
   return (
     <div className="bg-inherit">
-      <h1 className="font-extrabold text-center text-gray-50 text-4xl py-5">
+      <h1 className="font-extrabold text-center text-gray-900 text-4xl py-5">
         Testimoni
       </h1>
       <div className="grid lg:grid-cols-2 lg:grid-rows-3 lg:w-2/3 lg:grid-flow-col mx-auto lg:gap-4 gap-y-2 text-left text-white">
@@ -123,10 +123,10 @@ const Testimoni = () => {
         ))}
       </div>
       <div id="gallery">
-        <h1 className="font-extrabold text-4xl text-gray-50 text-center font-philosopher py-10 pt-32">
+        <h1 className="font-extrabold text-4xl text-gray-900 text-center font-philosopher py-10 pt-32">
           Galeri Kami
         </h1>
-        <h2 className="font-extrabold text-3xl text-gray-50 text-center font-philosopher py-7">
+        <h2 className="font-extrabold text-3xl text-gray-900 text-center font-philosopher py-7">
           Jangan Ragu, Promoter kami sudah tersertifikasi!
         </h2>
         {/* <div className="flex items-center justify-center">
@@ -203,7 +203,7 @@ const Testimoni = () => {
                       Payment successful
                     </Dialog.Title>
                     <div className="mt-2">
-                      <p className="text-sm text-gray-500">
+                      <p className="text-sm text-gray-9000">
                         Your payment has been successfully submitted. We’ve sent
                         you an email with all of the details of your order.
                       </p>

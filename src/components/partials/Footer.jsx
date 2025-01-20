@@ -9,14 +9,14 @@ const Footer = () => {
     <div
       className="bg-inherit w-full h-fit py-16 flex flex-col gap-y-10"
       id="contactus">
-      <div className="lg:max-w-7xl w-full text-gray-50 mx-auto grid md:grid-cols-3 place-items-center items-center rounded-xl h-1/2">
+      <div className="lg:max-w-7xl w-full text-gray-900 mx-auto grid md:grid-cols-3 place-items-center items-center rounded-xl h-1/2">
         <div className="col-span-2 md:col-span-1 place-content-start flex flex-col gap-y-5 items-center md:items-start text-center md:text-left justify-center">
           <div className="flex items-center gap-x-5">
             <RiWindyFill
-              size={100}
-              className="text-sky-700 bg-slate-700 p-3 inline-block rounded-full"
+              size={70}
+              className="text-sky-700 bg-slate-700 p-2 inline-block rounded-full"
             />
-            <p className="inline-block">Just Produce</p>
+            <p className="text-xl inline-block">Temukan Potensi Terbaik Anda dengan Tes STIFIn</p>
           </div>
           <span className="px-16 md:px-0 pb-5">
             We are trying to find the best match for yourself. Where leads you
@@ -55,7 +55,7 @@ const Footer = () => {
           "https://wa.me/6281318310354?text=Permisi%20Mas,%20saya%20ingin%20bertanya-tanya%20mengenai%20Test%20STIFIn%20^^"
         }
         target="_blank"
-        className="grid grid-cols-3 mx-5 place-items-center text-center max-w-xl text-gray-50 bg-green-500 hover:bg-green-700 hover:scale-105 transition-all md:mx-auto rounded-xl px-5 py-3">
+        className="grid grid-cols-3 mx-5 place-items-center text-center max-w-xl text-gray-900 bg-green-500 hover:bg-green-700 hover:scale-105 transition-all md:mx-auto rounded-xl px-5 py-3">
         <MdWhatsapp
           size={100}
           className="inline-block"
@@ -65,7 +65,7 @@ const Footer = () => {
       <a
         href={"https://www.instagram.com/ariempra/"}
         target="_blank"
-        className="grid grid-cols-3 mx-5 place-items-center text-center max-w-xl text-gray-50 bg-gradient-to-tl from-indigo-900 via-red-600 to-yellow-500 hover:scale-105 transition-all md:mx-auto rounded-xl px-5 py-5">
+        className="grid grid-cols-3 mx-5 place-items-center text-center max-w-xl text-gray-900 bg-gradient-to-tl from-indigo-900 via-red-600 to-yellow-500 hover:scale-105 transition-all md:mx-auto rounded-xl px-5 py-5">
         <BsInstagram
           size={90}
           className="inline-block"

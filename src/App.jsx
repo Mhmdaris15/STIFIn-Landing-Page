@@ -11,19 +11,21 @@ import Testimoni from "./components/partials/Testimoni";
 import Disadvantages from "./components/partials/Disadvantages";
 import FAQ from "./components/partials/FAQ";
 import Footer from "./components/partials/Footer";
+import ResultImage from "./components/partials/ResultImage";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App h-full w-screen absolute left-0 top-0 bg-[#0b080f]">
+    <div className="App h-full w-screen absolute left-0 top-0 bg-[#ecefef]">
       <Home />
       <ShouldTakeTest />
-      <Results />
+      {/* <Results /> */}
+      <ResultImage />
       <Advantages />
       <PriceList />
       <Testimoni />
-      <Disadvantages />
+      {/* <Disadvantages /> */}
       <FAQ />
       <Footer />
     </div>

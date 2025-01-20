@@ -17,7 +17,7 @@ const Disadvantages = () => {
   ];
   return (
     <div className="bg-inherit py-5">
-      <h1 className="font-extrabold text-gray-50 py-5 text-center text-5xl">
+      <h1 className="font-extrabold text-gray-900 py-5 text-center text-5xl">
         Kerugian jika kamu tidak mengikuti Test STIFIn
       </h1>
       <div className="flex flex-wrap justify-evenly md:gap-1">

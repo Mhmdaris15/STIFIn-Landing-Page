@@ -97,11 +97,11 @@ const Results = () => {
             className="relative flex flex-col items-center p-5 group hover:shadow-xl transition-all duration-150 rounded-lg hover:scale-105 hover:bg-[#be820a]"
             data-aos="fade-up"
             data-aos-anchor="[data-aos-id-blocks]">
-            <result.icon className="text-5xl text-[#FFB218] mb-3 group-hover:text-gray-50" />
+            <result.icon className="text-5xl text-[#FFB218] mb-3 group-hover:text-gray-900" />
             <h4 className="h4 mb-2 font-philosopher font-extrabold text-center">
               {result.title}
             </h4>
-            <p className="text-lg font-ubuntu text-gray-400 text-center group-hover:text-gray-50">
+            <p className="text-lg font-ubuntu text-gray-400 text-center group-hover:text-gray-900">
               {result.description}
             </p>
           </div>

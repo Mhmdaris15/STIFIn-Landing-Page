@@ -79,7 +79,7 @@ const NavbarHome = () => {
           to="contactus"
           smooth={true}
           duration={800}
-          className={`p-5 bg-gray-950 font-bold text-gray-50 my-3 hover:bg-gray-50 hover:text-gray-950 outline transition-all `}>
+          className={`p-5 bg-gray-50 font-bold text-gray-900 my-3 hover:bg-gray-200 hover:text-gray-950 outline transition-all `}>
           Contact Us
         </Link>
       </motion.div>
