@@ -43,14 +43,16 @@ const ShouldTakeTest = () => {
     "Cara Belajar dan Mengajar tepat dan Nyaman",
     "Mengetahui Kekuatan Jasmani dan Organ Tubuh",
   ];
-  // List directory
 
   return (
     <div className="bg-inherit block text-gray-900 pt-16 md:pt-24">
-      <h1 className="font-extrabold text-center text-4xl mb-5 lg:mb-12 md:mb-0 font-philosopher" id="whoshouldtakethistest">
+      <h1
+        className="font-extrabold text-center text-4xl mb-5 lg:mb-12 md:mb-0 font-philosopher"
+        id="whoshouldtakethistest"
+      >
         Manfaat Tes STIFIn
       </h1>
-      <div className="grid grid-cols-3 gap-4 mx-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-5">
         {users.map((user, index) => (
           <motion.div
             key={index}
@@ -62,7 +64,7 @@ const ShouldTakeTest = () => {
             <img
               src={images[index]}
               alt="user"
-              className="object-cover w-12 h-12 rounded-full"
+              className="object-cover w-12 h-12 rounded-full mr-4"
             />
             <h3 className="font-bold font-ubuntu">{user}</h3>
           </motion.div>
